@@ -1,0 +1,138 @@
+body{
+	font-family: $textFont;
+	background-color: $mainBgColor;
+	color: $mainFontColor;
+}
+.grid1{
+	background: url(../assets/images/rock.jpg);
+	background-size: cover;
+	background-position-x: 92%;
+}
+.grid2{
+	background: url(../assets/images/background.jpg);
+	background-size: 100% 100%;
+}
+.grid3{
+	background: url(../assets/images/rocket.jpg);
+    background-size: cover;
+    background-position-x: 38%;
+}
+.grid4{
+	background-color: #252839;
+}
+.grid5{
+    background-color: rgba(0,0,0,0.2);
+}
+
+#slider{
+	height: 100%;
+	width: 100%;
+}
+#slider img{
+	height: 100%;
+	width: 100%;
+}
+
+.mayorAltura{
+	height: 100vh;
+}
+
+#logo{
+	margin: 15% 0% 0% 40%;
+}
+#title{
+	font-family: $headersFont;
+	font-size: 4.5em;
+    position: absolute;
+    top: 40%;
+    left: 14%;
+    z-index: 1;
+    font-weight: bold;
+}
+#start{
+	position: absolute;
+    top: 65%;
+    left: 15%;
+    z-index: 1;
+}
+.info{
+	margin: 15% 6% 0 6%;
+}
+.data {
+	margin: 3% 0 0 10%;	
+}
+#navBtns {
+	display: flex;
+    justify-content: space-between;
+    margin: 10%;
+}
+#navLoadBars{
+	display: flex;
+    justify-content: space-between;
+    margin: 15%;
+}
+#loadingSwitch {
+	display: flex;
+    justify-content: space-between;
+    margin: 10%;
+}
+#barLeft{
+	width: 50%;
+}
+#barRight{
+	width: 50%;
+}
+
+//tablet
+@media all and (max-width: 870px) {
+	#title{	
+		font-size: 4.2em;	    
+	    top: 30%;
+	    left: 14%; 
+	    line-height: 0.9; 
+	}
+	#logo{
+		margin: 10% 0% 0% 25%
+	}
+	#start{
+		top: 58%;
+	}
+	.grid5{
+		background-color: #0e2c2d;
+	}
+}
+
+@media all and (max-width: 550px) {
+	.grid1{
+		height: 10em;
+		z-index: 1;
+	}
+	.grid2{
+		background-size: cover
+	}
+	.grid5{
+		background-color: rgba(0,0,0,0.2);
+	}
+	#logo{
+		margin: 5%;
+	    top: 10%;
+	    display: flex;
+	    justify-content: center;
+	    align-items: center;
+	    z-index: 3;
+	}
+	#start{	
+    	position: fixed;
+	    top: unset;
+	    left: unset;
+	    bottom: 10;
+	    left: 50%;
+  		transform: translateX(-50%); 
+  	}
+  	#title{	
+		font-size: 3em;	    
+	    top: 50%;
+	    left: 14%; 
+	    line-height: 0.9; 
+	}	
+}

@@ -1,0 +1,106 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Merriweather&display=swap);
+body {
+  font-family: "Merriweather", serif;
+  background-color: #0b151f;
+  color: white;
+}
+
+.grid1 {
+  background: url(../assets/images/rock.jpg);
+  background-size: cover;
+  background-position-x: 92%;
+}
+
+.grid2 {
+  background: url(../assets/images/background.jpg);
+  background-size: 100% 100%;
+}
+
+.grid3 {
+  background: url(../assets/images/rocket.jpg);
+  background-size: cover;
+  background-position-x: 38%;
+}
+
+.grid4 {
+  background-color: #252839;
+}
+
+.grid5 {
+  background-color: #1d363c;
+  opacity: 0.5;
+}
+
+.grid6 {
+  background-color: green;
+}
+
+.mayorAltura {
+  height: 100vh;
+}
+
+#logo {
+  padding: 15% 0% 0% 40%;
+}
+
+#title {
+  font-family: "Montserrat", serif;
+  font-size: 5em;
+  position: absolute;
+  top: 40%;
+  left: 14%;
+  z-index: 1;
+  font-weight: bold;
+}
+
+#start {
+  position: absolute;
+  margin: 8% 0% 0% 13%;
+}
+
+body {
+  margin: 0;
+  display: grid;
+  grid-template-columns: 0.25fr 1fr 1fr 0.95fr 1fr 0.25fr;
+  grid-template-rows: 1fr 1fr 1fr 1.05fr 0.25fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.grid1 {
+  grid-area: 1/1/5/3;
+}
+
+.grid2 {
+  grid-area: 1/3/5/6;
+}
+
+.grid3 {
+  grid-area: 1/5/4/7;
+}
+
+.grid4 {
+  grid-area: 4/4/6/5;
+}
+
+.grid5 {
+  grid-area: 1/3/4/4;
+}
+
+.div6 {
+  grid-area: 1/3/3/6;
+}
+
+.mayorAltura {
+  grid-area: 1/4/6/4;
+}
+
+.btnSlide {
+  background-color: #ea295d;
+  font-family: "Merriweather", serif;
+  font-size: 1.5em;
+  padding: 0.5em;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,305 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Merriweather&display=swap);
+body {
+  font-family: "Merriweather", serif;
+  background-color: #0b151f;
+  color: white;
+}
+
+.grid1 {
+  background: url(../assets/images/rock.jpg);
+  background-size: cover;
+  background-position-x: 92%;
+}
+
+.grid2 {
+  background: url(../assets/images/background.jpg);
+  background-size: 100% 100%;
+}
+
+.grid3 {
+  background: url(../assets/images/rocket.jpg);
+  background-size: cover;
+  background-position-x: 38%;
+}
+
+.grid4 {
+  background-color: #252839;
+}
+
+.grid5 {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+#slider {
+  height: 100%;
+  width: 100%;
+}
+
+#slider img {
+  height: 100%;
+  width: 100%;
+}
+
+.mayorAltura {
+  height: 100vh;
+}
+
+#logo {
+  margin: 15% 0% 0% 40%;
+}
+
+#title {
+  font-family: "Montserrat", serif;
+  font-size: 4.5em;
+  position: absolute;
+  top: 40%;
+  left: 14%;
+  z-index: 1;
+  font-weight: bold;
+}
+
+#start {
+  position: absolute;
+  top: 65%;
+  left: 15%;
+  z-index: 1;
+}
+
+.info {
+  margin: 15% 6% 0 6%;
+}
+
+.data {
+  margin: 3% 0 0 10%;
+}
+
+#navBtns {
+  display: flex;
+  justify-content: space-between;
+  margin: 10%;
+}
+
+#navLoadBars {
+  display: flex;
+  justify-content: space-between;
+  margin: 15%;
+}
+
+#loadingSwitch {
+  display: flex;
+  justify-content: space-between;
+  margin: 10%;
+}
+
+#barLeft {
+  width: 50%;
+}
+
+#barRight {
+  width: 50%;
+}
+
+@media all and (max-width: 870px) {
+  #title {
+    font-size: 4.2em;
+    top: 30%;
+    left: 14%;
+    line-height: 0.9;
+  }
+
+  #logo {
+    margin: 10% 0% 0% 25%;
+  }
+
+  #start {
+    top: 58%;
+  }
+
+  .grid5 {
+    background-color: #0e2c2d;
+  }
+}
+@media all and (max-width: 550px) {
+  .grid1 {
+    height: 10em;
+    z-index: 1;
+  }
+
+  .grid2 {
+    background-size: cover;
+  }
+
+  .grid5 {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+
+  #logo {
+    margin: 5%;
+    top: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+  }
+
+  #start {
+    position: fixed;
+    top: unset;
+    left: unset;
+    bottom: 10;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  #title {
+    font-size: 3em;
+    top: 40%;
+    left: 14%;
+    line-height: 0.9;
+  }
+}
+body {
+  margin: 0;
+  display: grid;
+  grid-template-columns: 0.25fr 1fr 1fr 0.95fr 1fr 0.25fr;
+  grid-template-rows: 1fr 1fr 1fr 1.05fr 0.25fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.grid1 {
+  grid-area: 1/1/5/3;
+}
+
+.grid2 {
+  grid-area: 1/3/5/6;
+}
+
+.grid3 {
+  grid-area: 1/5/4/7;
+}
+
+.grid4 {
+  grid-area: 4/4/6/5;
+}
+
+.grid5 {
+  grid-area: 1/3/4/4;
+}
+
+.grid6 {
+  grid-area: 1/4/4/7;
+}
+
+.mayorAltura {
+  grid-area: 1/4/6/4;
+}
+
+/* tablet */
+@media all and (max-width: 870px) {
+  body {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 1fr 0.5fr 1fr 0.5fr 1fr;
+  }
+
+  .grid1 {
+    grid-area: 1/1/4/3;
+  }
+
+  .grid2 {
+    grid-area: 4/1/8/4;
+  }
+
+  .grid3 {
+    grid-area: 3/3/6/3;
+  }
+
+  .grid4 {
+    grid-area: 5/1/4/3;
+  }
+
+  .grid5 {
+    grid-area: 1/3/3/4;
+  }
+
+  .grid6 {
+    grid-area: 3/3/6/3;
+  }
+}
+/* mobile */
+@media all and (max-width: 550px) {
+  body {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.33fr repeat(6, 1fr);
+  }
+
+  .grid1 {
+    grid-area: 1/1/2/2;
+  }
+
+  .grid3 {
+    grid-area: 2/1/4/2;
+  }
+
+  .grid5 {
+    grid-area: 4/1/6/2;
+  }
+
+  .grid2 {
+    grid-area: 4/1/7/2;
+  }
+
+  .grid6 {
+    grid-area: 7/1/7/2;
+  }
+
+  .grid4 {
+    display: none;
+  }
+}
+button:focus {
+  outline: 0;
+}
+
+.btnSlide {
+  background-color: #ea295d;
+  font-family: "Merriweather", serif;
+  color: white;
+  font-size: 1em;
+  padding: 1em;
+  font-style: italic;
+  border: none;
+  cursor: pointer;
+}
+
+.btnSlide:hover {
+  color: #56bd9c;
+}
+
+.btnsNav {
+  background-color: transparent;
+  font-size: 1em;
+  font-family: "Merriweather", serif;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.subtitle {
+  font-size: 1.3em;
+}
+
+.hash {
+  font-style: italic;
+}
+
+#barLoadBlue {
+  border: 1px solid #56bd9c;
+}
+
+#barLoadWhite {
+  border: 1px solid white;
+}
+
+/*# sourceMappingURL=style.css.map */

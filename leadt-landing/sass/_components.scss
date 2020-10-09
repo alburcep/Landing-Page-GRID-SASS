@@ -1,0 +1,36 @@
+button:focus {outline:0;}
+.btnSlide {
+	background-color: #ea295d;
+	font-family: $textFont;
+	color: $mainFontColor;
+	font-size: 1em;
+	padding: 1em;
+	font-style: italic;
+	border: none;
+	cursor: pointer;
+}
+.btnSlide:hover{
+	color: $activeColor;
+}
+.btnsNav {
+	background-color: transparent;
+	font-size: 1em;
+	font-family: $textFont;
+	color: $mainFontColor;
+	border: none;
+    cursor:pointer;
+}
+.subtitle {
+	font-size: 1.3em;
+}
+.hash{
+	font-style: italic;
+}
+
+#barLoadBlue {
+	border: 1px solid $activeColor; 
+}
+
+#barLoadWhite {
+	border: 1px solid $mainFontColor; 
+}
