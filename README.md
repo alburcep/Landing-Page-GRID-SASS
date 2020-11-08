@@ -1,6 +1,4 @@
 # Landin Page - To the Moon
-#GRID/FLEX
-SCSS
-JQuery
+GRID/FLEX - SCSS - JQuery
 
 
